@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alex Rivera — Full Stack Developer</title>
+<meta name="description" content="Full Stack Developer & UI/UX Designer crafting modern web experiences."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+ 
+<div id="cur"></div>
+<div id="cdot"></div>
+ 
+<!-- Loader -->
+<div id="loader">
+  <div class="llo">AR</div>
+  <div class="lbar"><div class="lfill"></div></div>
+</div>
+ 
+<!-- Nav -->
+<nav id="nb">
+  <a href="#hero" class="nlogo">Alex Rivera</a>
+  <ul class="nlinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nright">
+    <button class="tbtn" id="tbtn" aria-label="Toggle theme">🌙</button>
+    <button class="hbg" id="hbg" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mnav" id="mnav">
+  <a href="#hero" onclick="cm()">Home</a>
+  <a href="#about" onclick="cm()">About</a>
+  <a href="#skills" onclick="cm()">Skills</a>
+  <a href="#projects" onclick="cm()">Projects</a>
+  <a href="#experience" onclick="cm()">Experience</a>
+  <a href="#contact" onclick="cm()">Contact</a>
+</div>
+ 
+<!-- Hero -->
+<section id="hero">
+  <div class="fshape fs1"></div>
+  <div class="fshape fs2"></div>
+  <div class="mw hgrid">
+    <div>
+      <div class="heyebrow rv"><span class="hdot"></span> Available for opportunities</div>
+      <h1 class="hname rv">Hi, I'm<br><span>Alex Rivera</span></h1>
+      <div class="htype rv"><span class="ttext" id="typed"></span><span class="tcur"></span></div>
+      <p class="hdesc rv">I craft elegant digital experiences — from pixel-perfect interfaces to robust backends. Passionate about clean code, thoughtful design, and meaningful products.</p>
+      <div class="hbtns rv">
+        <a href="#projects" class="btn bpri">View Projects ↓</a>
+        <a href="#contact" class="btn bout">Contact Me →</a>
+      </div>
+      <div class="hstats rv">
+        <div class="hstat"><div class="snum">3+</div><div class="slb">Years Experience</div></div>
+        <div class="hstat"><div class="snum">40+</div><div class="slb">Projects Built</div></div>
+        <div class="hstat"><div class="snum">20+</div><div class="slb">Happy Clients</div></div>
+      </div>
+    </div>
+    <div class="hiwrap rvr">
+      <div class="hring"></div>
+      <div class="hring2"></div>
+      <div class="avatar"><span class="avatar-icon">👨‍💻</span></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- About -->
+<section id="about">
+  <div class="mw">
+    <div class="agrid">
+      <div class="about-text">
+        <div class="slbl rv">About Me</div>
+        <h2 class="stitle rv">Who I Am</h2>
+        <p class="rv">I'm a full-stack developer and UI/UX designer based in San Francisco, CA, with over 3 years of experience building products people love to use.</p>
+        <p class="rv">My work sits at the intersection of engineering and design — I care deeply about how things look, how they feel, and how they perform under the hood.</p>
+        <p class="rv">When I'm not shipping code, I'm exploring hiking trails, experimenting with generative art, or hunting for the perfect cup of coffee.</p>
+        <div class="interests rv">
+          <span class="pill">Open Source</span><span class="pill">UI/UX Design</span>
+          <span class="pill">Hiking 🥾</span><span class="pill">Coffee ☕</span>
+          <span class="pill">Music 🎵</span><span class="pill">Generative Art</span>
+        </div>
+        <a href="#" class="btn bout rv" style="display:inline-flex;margin-top:1rem">📄 Download Resume</a>
+      </div>
+      <div>
+        <div class="slbl rv">My Journey</div>
+        <div class="tl rv">
+          <div class="tli"><div class="tdate">2022 — Present</div><div class="trole">Senior Frontend Developer</div><div class="tcomp">Nexus Labs, San Francisco</div></div>
+          <div class="tli"><div class="tdate">2021 — 2022</div><div class="trole">UI/UX Designer & Developer</div><div class="tcomp">Pixel Bridge Studio</div></div>
+          <div class="tli"><div class="tdate">2020 — 2021</div><div class="trole">Frontend Dev Intern</div><div class="tcomp">Horizon Tech</div></div>
+          <div class="tli"><div class="tdate">2016 — 2020</div><div class="trole">B.Sc. Computer Science</div><div class="tcomp">UC Berkeley</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Skills -->
+<section id="skills" style="background:linear-gradient(180deg,transparent,rgba(59,130,246,.03),transparent)">
+  <div class="mw">
+    <div class="shdr">
+      <div class="slbl rv">What I Work With</div>
+      <h2 class="stitle rv">Skills & Technologies</h2>
+      <p class="ssub rv">A toolkit built over years of shipping real products — from prototyping to production.</p>
+    </div>
+    <div class="skgrid">
+      <div class="skcard rv">
+        <div class="skcat"><span style="font-size:1.4rem">🎨</span><span class="skcname">Frontend</span></div>
+        <div class="skitems">
+          <span class="skchip">📄 HTML5</span><span class="skchip">🎨 CSS3</span><span class="skchip">⚡ JavaScript</span>
+          <span class="skchip">⚛️ React</span><span class="skchip">💨 Tailwind CSS</span><span class="skchip">🔷 TypeScript</span>
+          <span class="skchip">🌐 Next.js</span>
+        </div>
+      </div>
+      <div class="skcard rv">
+        <div class="skcat"><span style="font-size:1.4rem">⚙️</span><span class="skcname">Backend</span></div>
+        <div class="skitems">
+          <span class="skchip">🟩 Node.js</span><span class="skchip">🚂 Express</span><span class="skchip">🐍 Python</span>
+          <span class="skchip">🔥 FastAPI</span><span class="skchip">🦅 Django</span><span class="skchip">☁️ REST APIs</span>
+        </div>
+      </div>
+      <div class="skcard rv">
+        <div class="skcat"><span style="font-size:1.4rem">🗄️</span><span class="skcname">Database</span></div>
+        <div class="skitems">
+          <span class="skchip">🐬 MySQL</span><span class="skchip">🍃 MongoDB</span><span class="skchip">🐘 PostgreSQL</span>
+          <span class="skchip">🔴 Redis</span><span class="skchip">🔥 Firebase</span>
+        </div>
+      </div>
+      <div class="skcard rv">
+        <div class="skcat"><span style="font-size:1.4rem">🛠️</span><span class="skcname">Tools & Design</span></div>
+        <div class="skitems">
+          <span class="skchip">🔧 Git</span><span class="skchip">🐙 GitHub</span><span class="skchip">🎭 Figma</span>
+          <span class="skchip">💻 VS Code</span><span class="skchip">🐳 Docker</span><span class="skchip">⚡ Vite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Projects -->
+<section id="projects">
+  <div class="mw">
+    <div class="shdr">
+      <div class="slbl rv">My Work</div>
+      <h2 class="stitle rv">Featured Projects</h2>
+      <p class="ssub rv">A selection of projects I've built — each one solving a real problem with clean code and thoughtful design.</p>
+    </div>
+    <div class="pjgrid">
+      <div class="pjcard rv">
+        <div class="pjimg"><div class="pjibg" style="background:linear-gradient(135deg,#3B82F6,#06B6D4)"></div><span class="pjicon">📊</span></div>
+        <div class="pjbody">
+          <div class="pjtags"><span class="pjtag">React</span><span class="pjtag">Node.js</span><span class="pjtag">MongoDB</span></div>
+          <div class="pjtitle">Taskflow Dashboard</div>
+          <p class="pjdesc">A full-featured project management app with real-time collaboration, Kanban boards, analytics, and smart team notifications.</p>
+          <div class="pjlinks"><a href="#" class="pjlink">⌥ GitHub</a><a href="#" class="pjlink live">↗ Live Demo</a></div>
+        </div>
+      </div>
+      <div class="pjcard rv">
+        <div class="pjimg"><div class="pjibg" style="background:linear-gradient(135deg,#8B5CF6,#3B82F6)"></div><span class="pjicon">🛍️</span></div>
+        <div class="pjbody">
+          <div class="pjtags"><span class="pjtag">Next.js</span><span class="pjtag">Tailwind</span><span class="pjtag">PostgreSQL</span></div>
+          <div class="pjtitle">Luminary Store</div>
+          <p class="pjdesc">A modern e-commerce platform with cart management, Stripe payments, product search, and a beautiful admin panel.</p>
+          <div class="pjlinks"><a href="#" class="pjlink">⌥ GitHub</a><a href="#" class="pjlink live">↗ Live Demo</a></div>
+        </div>
+      </div>
+      <div class="pjcard rv">
+        <div class="pjimg"><div class="pjibg" style="background:linear-gradient(135deg,#06B6D4,#8B5CF6)"></div><span class="pjicon">🤖</span></div>
+        <div class="pjbody">
+          <div class="pjtags"><span class="pjtag">Python</span><span class="pjtag">FastAPI</span><span class="pjtag">React</span></div>
+          <div class="pjtitle">AI Chat Interface</div>
+          <p class="pjdesc">A clean, responsive chat UI powered by a Python backend, with streaming responses, conversation history, and markdown rendering.</p>
+          <div class="pjlinks"><a href="#" class="pjlink">⌥ GitHub</a><a href="#" class="pjlink live">↗ Live Demo</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Experience -->
+<section id="experience" style="background:linear-gradient(180deg,transparent,rgba(139,92,246,.03),transparent)">
+  <div class="mw">
+    <div class="shdr">
+      <div class="slbl rv">Where I've Been</div>
+      <h2 class="stitle rv">Experience & Education</h2>
+    </div>
+    <div class="expgrid">
+      <div>
+        <div class="slbl rv" style="margin-bottom:1.5rem">Work Experience</div>
+        <div class="extl">
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">Senior Frontend Developer</div><span class="exbadge">Full-time</span></div>
+              <div class="exco">Nexus Labs</div>
+              <div class="exdate">Jan 2022 — Present · San Francisco, CA</div>
+              <div class="exdesc">Lead frontend for a SaaS analytics platform serving 50K+ users. Reduced load times 40% and introduced a design system adopted across 3 products.</div>
+            </div>
+          </div>
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">UI/UX Designer & Developer</div><span class="exbadge">Full-time</span></div>
+              <div class="exco">Pixel Bridge Studio</div>
+              <div class="exdate">Jun 2021 — Dec 2021 · Remote</div>
+              <div class="exdesc">Designed and built interfaces for 8 client projects across fintech and healthtech. Shipped MVPs in 6–8 week sprints.</div>
+            </div>
+          </div>
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">Frontend Developer Intern</div><span class="exbadge">Internship</span></div>
+              <div class="exco">Horizon Tech</div>
+              <div class="exdate">Jan 2021 — May 2021 · Oakland, CA</div>
+              <div class="exdesc">Built reusable React components, improved test coverage from 30% to 70%, and mentored 2 junior interns.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="slbl rv" style="margin-bottom:1.5rem">Education & Certifications</div>
+        <div class="extl">
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">B.Sc. Computer Science</div><span class="exbadge cyanb">Degree</span></div>
+              <div class="exco" style="color:var(--cyan)">University of California, Berkeley</div>
+              <div class="exdate">2016 — 2020</div>
+              <div class="exdesc">GPA 3.8 · Focus on Human-Computer Interaction and Software Engineering. Dean's List 2018–2020.</div>
+            </div>
+          </div>
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">AWS Certified Developer</div><span class="exbadge cyanb">Cert</span></div>
+              <div class="exco" style="color:var(--cyan)">Amazon Web Services</div>
+              <div class="exdate">2022</div>
+              <div class="exdesc">Associate-level certification covering Lambda, S3, DynamoDB, API Gateway, and deployment pipelines.</div>
+            </div>
+          </div>
+          <div class="exitem rv">
+            <div class="excard">
+              <div class="extop"><div class="exrole">Google UX Design Certificate</div><span class="exbadge cyanb">Cert</span></div>
+              <div class="exco" style="color:var(--cyan)">Google / Coursera</div>
+              <div class="exdate">2021</div>
+              <div class="exdesc">7-course professional certificate covering UX research, wireframing, prototyping, and usability testing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Contact -->
+<section id="contact">
+  <div class="mw">
+    <div class="shdr">
+      <div class="slbl rv">Get in Touch</div>
+      <h2 class="stitle rv">Let's Work Together</h2>
+      <p class="ssub rv">Got a project in mind, a role to fill, or just want to say hello? My inbox is always open.</p>
+    </div>
+    <div class="cgrid">
+      <div class="rvl">
+        <div class="citems">
+          <div class="citem"><div class="cicon">📧</div><div><div class="clbl">Email</div><div class="cval">alex@alexrivera.dev</div></div></div>
+          <div class="citem"><div class="cicon">📞</div><div><div class="clbl">Phone</div><div class="cval">+1 (415) 555-0172</div></div></div>
+          <div class="citem"><div class="cicon">📍</div><div><div class="clbl">Location</div><div class="cval">San Francisco, CA</div></div></div>
+        </div>
+        <div class="socials">
+          <a href="#" class="sbtn" title="LinkedIn">💼</a>
+          <a href="#" class="sbtn" title="GitHub">🐙</a>
+          <a href="#" class="sbtn" title="Twitter/X">𝕏</a>
+          <a href="#" class="sbtn" title="Facebook">📘</a>
+          <a href="#" class="sbtn" title="Dribbble">🏀</a>
+        </div>
+      </div>
+      <div class="rvr">
+        <form class="cform" id="cform" onsubmit="hs(event)">
+          <div class="frow">
+            <div class="fg"><label for="nm">Name</label><input type="text" id="nm" placeholder="Your full name" required></div>
+            <div class="fg"><label for="em">Email</label><input type="email" id="em" placeholder="your@email.com" required></div>
+          </div>
+          <div class="fg"><label for="sb">Subject</label><input type="text" id="sb" placeholder="What's this about?"></div>
+          <div class="fg"><label for="mg">Message</label><textarea id="mg" placeholder="Tell me about your project or just say hi..." required></textarea></div>
+          <button type="submit" class="bsub" id="sbtn"><span>Send Message</span> <span>✉️</span></button>
+        </form>
+        <div class="fsuc" id="fsuc">
+          <div style="font-size:2rem;margin-bottom:.75rem">✅</div>
+          <div style="font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:600;margin-bottom:.5rem">Message sent!</div>
+          <div style="font-size:.9rem;color:var(--text-muted)">Thanks for reaching out — I'll get back to you within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Footer -->
+<footer>
+  <div class="finn">
+    <div class="fcopy">© 2025 Alex Rivera. Built with ❤️ and a lot of ☕</div>
+    <div class="flinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div>
+    <button class="bktop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+  </div>
+</footer>
+</body>
+</html>
