@@ -85,9 +85,24 @@ h1.hname{font-family:'Poppins',sans-serif;font-size:clamp(2.8rem,6vw,5rem);font-
 .hring{position:absolute;inset:-16px;border-radius:50%;border:1px dashed rgba(59,130,246,.3);animation:spin 20s linear infinite}
 .hring2{position:absolute;inset:-36px;border-radius:50%;border:1px solid rgba(139,92,246,.15);animation:spin 35s linear infinite reverse}
 @keyframes spin{to{transform:rotate(360deg)}}
-.avatar{width:clamp(220px,30vw,320px);height:clamp(220px,30vw,320px);border-radius:50%;background:linear-gradient(135deg,rgba(59,130,246,.18),rgba(139,92,246,.18));position:relative;z-index:1;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 0 60px rgba(59,130,246,.2);border:2px solid rgba(59,130,246,.25)}
-.avatar-icon{font-size:7rem;line-height:1}
-.fshape{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
+.avatar{
+    width:clamp(220px,30vw,320px);
+    height:clamp(220px,30vw,320px);
+    border-radius:50%;
+    background:linear-gradient(135deg,rgba(59,130,246,.18),rgba(139,92,246,.18));
+    position:relative;
+    z-index:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    box-shadow:0 0 60px rgba(59,130,246,.2);
+    border:2px solid rgba(59,130,246,.25);
+}
+.avatar-icon{
+    font-size:7rem;
+    line-height:1;
+}.fshape{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none;z-index:0}
 .fs1{width:500px;height:500px;background:rgba(59,130,246,.06);top:-100px;right:-100px;animation:fl1 12s ease-in-out infinite}
 .fs2{width:400px;height:400px;background:rgba(139,92,246,.06);bottom:0;left:-100px;animation:fl2 15s ease-in-out infinite}
 @keyframes fl1{0%,100%{transform:translate(0,0)}50%{transform:translate(-30px,20px)}}
