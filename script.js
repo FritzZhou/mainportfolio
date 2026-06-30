@@ -1,14 +1,5 @@
 window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),2100));
- 
-// Cursor
-const cur=document.getElementById('cur'),cdot=document.getElementById('cdot');
-let mx=0,my=0,cx=0,cy=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cdot.style.left=mx+'px';cdot.style.top=my+'px'});
-(function ani(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cur.style.left=cx+'px';cur.style.top=cy+'px';requestAnimationFrame(ani)})();
-document.querySelectorAll('a,button').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.width='52px';cur.style.height='52px';cur.style.opacity='1'});
-  el.addEventListener('mouseleave',()=>{cur.style.width='36px';cur.style.height='36px';cur.style.opacity='.6'});
-});
+
  
 // Nav scroll
 window.addEventListener('scroll',()=>document.getElementById('nb').classList.toggle('sc',scrollY>60));
